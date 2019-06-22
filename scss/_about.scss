@@ -61,7 +61,7 @@
         margin: auto;
         height: 115px;
         width: 115px;
-        background: #55eb0f;
+        background: #95ff4f;
         background-image: -moz-linear-gradient(120deg, rgb(66, 223, 113) 0%, rgb(80, 90, 221) 100%);
         background-image: -webkit-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
         background-image: -ms-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
@@ -78,7 +78,7 @@
             top: 50%;
             left: 50%;
             @include transform(translate(-50%, -50%));
-            background: #55eb0f;
+            background: #95ff4f;
             background-image: -moz-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
             background-image: -webkit-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
             background-image: -ms-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);

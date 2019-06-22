@@ -89,13 +89,13 @@
 
 /* Down Arrow Icon for Megamenu */
 @font-face {
-  font-family: 'classyfonts';
+  font-family: "Poppins";
   src: url("../../fonts/classy-fonts.eot?fftrrv");
   src: url("../../fonts/classy-fonts.eot?fftrrv#iefix") format("embedded-opentype"), url("../../fonts/classy-fonts.ttf?fftrrv") format("truetype"), url("../../fonts/classy-fonts.woff?fftrrv") format("woff"), url("../../fonts/classy-fonts.svg?fftrrv#classyfonts") format("svg");
   font-weight: normal;
   font-style: normal; }
 .icon-classy-nav-down-arrow {
-  font-family: 'classyfonts';
+  font-family: "Poppins";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -110,7 +110,7 @@
 
 .classynav ul li.megamenu-item > a:after,
 .classynav ul li.has-down > a:after {
-  font-family: 'classyfonts';
+  font-family: "Poppins";
   content: "\e900";
   font-size: 12px;
   color: #000000;
@@ -395,7 +395,7 @@
   display: block;
   border-radius: 2px; }
   .breakpoint-on .dd-trigger::after {
-    font-family: 'classyfonts';
+    font-family: "Poppins";
     content: "\e900";
     font-size: 12px;
     color: #fff;
