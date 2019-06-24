@@ -15,15 +15,12 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donate.css">
 
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- /Preloader -->
+
 
     <!-- Header Area Start -->
     <header class="header-area">
@@ -66,6 +63,29 @@
     <!-- Header Area End -->
    
    <h1 align="center" style="padding: 150px; color:#55eb0f">CONTRIBUTE US</h1>
+
+   <div class="container" style="margin-bottom: 5%">
+       <div class="row">
+           <div class="col">
+                <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm"/>
+           </div>
+           <div class="col">
+                <input type="button" class="toggle-button btn-block" value="UPI" id="upi" />
+           </div>
+           <div class="col">
+                <input type="button" class="toggle-button btn-block" value="Bank" id="bank" />
+           </div>
+       </div>
+   </div>
+
+
+   <div class="container" style="margin-bottom: 20%">
+        <div class="row">
+            <div class="payment-block" id="payment-block">
+                <img src="https://picsum.photos/300/500">
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer Area Start -->
@@ -141,6 +161,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/confer.bundle.js"></script>
 <!-- Active -->
 <script src="js/default-assets/active.js"></script>
+
+<script src="donate.js"></script>
 </body>
 
 </html>
