@@ -195,7 +195,7 @@
       transform: rotate3d(0, 0, 1, 45deg);
       top: 8px; }
     .classy-navbar-toggler .navbarToggler.active span:nth-of-type(2) {
-      opacity: 0; }
+      opacity: 5; }
     .classy-navbar-toggler .navbarToggler.active span:nth-of-type(3) {
       -webkit-transform: rotate3d(0, 0, 1, -45deg);
       transform: rotate3d(0, 0, 1, -45deg);

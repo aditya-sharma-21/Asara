@@ -345,7 +345,7 @@ input:required {
   padding-bottom: 100px; }
 
 .section-padding-100-0 {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 0; }
 
 /* :: 3.0 Preloader Area CSS */
@@ -1048,8 +1048,8 @@ input:required {
     -o-transition-duration: 500ms;
     transition-duration: 500ms; }
     .main-footer-area .single-footer-widget .social-info a:hover, .main-footer-area .single-footer-widget .social-info a:focus {
-      background-color: #5d5e8d;
-      border-color: #5d5e8d; }
+      background-color: #55eb05;
+      border-color: #000000; }
   .main-footer-area .single-footer-widget .footer-contact-info {
     position: relative;
     z-index: 1; }
@@ -1993,7 +1993,7 @@ input:required {
     margin-bottom: 25px;
     line-height: 1; }
   .single-ticket-pricing-table .ticket-icon img {
-    max-height: 100px; }
+    max-height: 200px; }
     @media only screen and (max-width: 767px) {
       .single-ticket-pricing-table .ticket-icon img {
         max-height: 60px; } }
@@ -2175,3 +2175,12 @@ input:required {
 
 /*# sourceMappingURL=style.css.map */
 
+/* Circle */
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  border: 3px solid #55eb0f;
+  display: inline-block;
+}
