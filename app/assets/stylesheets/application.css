@@ -1,0 +1,91 @@
+.dot {
+    height: 10rem;
+    width: 10rem;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 3px solid #55eb0f;
+    display: inline-block;
+    }
+  .bg-dark {
+    background-color: #000000 !important;
+  }
+
+  .nav-link{
+    color: #52AD48 !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+
+
+  /* donate us page */
+
+  .toggle-button {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: auto;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #6ddb36;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: Poppins;
+    color: #2f2f2f;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  }
+
+  .button-active,.toggle-button:hover {
+    border: 1px solid #ffffff;
+    background: #6ddb36;
+  }
+
+
+  .payment-block {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+    border: none;
+    color: #2f2f2f;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: Poppins;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: #e6ecef;
+    -webkit-box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.3) ;
+  }
+
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.sticky-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.slideshow-image{
+  width: 100% !important;
+height: 45vw !important;
+}

@@ -1,0 +1,55 @@
+<h2 class="h1-responsive font-weight-bold text-center my-5">Donate</h2>
+
+       <div class="container" style="margin-bottom: 5%;padding-top: 5%">
+           <div class="row">
+               <div class="col">
+                   <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm"/>
+               </div>
+               <div class="col">
+                   <input type="button" class="toggle-button btn-block" value="UPI" id="upi" />
+               </div>
+               <div class="col">
+                   <input type="button" class="toggle-button btn-block" value="Bank" id="bank" />
+               </div>
+           </div>
+       </div>
+       <div class="container" style="margin-bottom: 20%">
+           <div class="row">
+               <div class="payment-block" id="payment-block">
+                   <img src="https://picsum.photos/300/500">
+               </div>
+           </div>
+       </div>
+
+<script type="text/javascript">
+  var addActiveClass = function(buttonPressed){
+    document.getElementById('paytm').classList.remove('button-active');
+    document.getElementById('upi').classList.remove('button-active');
+    document.getElementById('bank').classList.remove('button-active');
+    buttonPressed.classList.add("button-active");
+}
+
+document.getElementById('paytm').addEventListener('click',function(){
+
+    addActiveClass(document.getElementById('paytm'));
+    var block=document.getElementById('payment-block');
+    block.innerHTML='<img src="https://picsum.photos/id/12/300/500">';
+})
+
+document.getElementById('upi').addEventListener('click',function(){
+
+    addActiveClass(document.getElementById('upi'));
+    var block=document.getElementById('payment-block');
+    block.innerHTML='<img src="https://picsum.photos/id/24/300/500">';
+})
+
+document.getElementById('bank').addEventListener('click',function(){
+
+    addActiveClass(document.getElementById('bank'));
+    var block=document.getElementById('payment-block');
+    block.innerHTML='<img src="https://picsum.photos/id/36/300/500">';
+})
+</script>
+<script type="text/javascript">
+  stick = false;
+</script>
