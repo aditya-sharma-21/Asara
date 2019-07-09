@@ -1,57 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aasra</title>
+  <!-- <%= csrf_meta_tags %>
+  <%= csp_meta_tag %> -->
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Homepage|Asara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+        <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%>
+        <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item" id='home'>
+                    <%= link_to 'HOMEPAGE', root_path, class:'nav-link', style:'color:#000' %>
+                  </li>
+                  <li class="nav-item" id='join'>
+                    <%= link_to 'JOIN US', join_path, class:'nav-link', style:'color:#000' %>
+                  </li>
+                  <li class="nav-item" id='volunteers'>
+                    <%= link_to 'OUR VOLUNTEERS', volunteers_path, class:'nav-link', style:'color:#000' %>
+                  </li>
+                  
+                  <li class="nav-item" id='projects'>
+                  <%= link_to 'OUR PROJECTS', projects_path, class:'nav-link', style:'color:#000' %>
+                  </li>
+                  <li class="nav-item" id='help'>
+                  <%= link_to 'HELP US', help_us_path, class:'nav-link', style:'color:#000' %>
+                  </li>
+                </ul>
+              </div>
+      </nav>
 
-            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
-                    <a class="navbar-brand" href="#">Asara</a>
-                    <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                              <li class="nav-item" id='home'>
-                                <%= link_to 'HOMEPAGE', root_path, class:'nav-link' %>
-                              </li>
-                              <li class="nav-item" id='join'>
-                                <%= link_to 'JOIN US', join_path, class:'nav-link' %>
-                              </li>
-                              <li class="nav-item" id='volunteers'>
-                                <%= link_to 'OUR VOLUNTEERS', volunteers_path, class:'nav-link' %>
-                              </li>
-                              <li class="nav-item" id='donate'>
-                                <%= link_to 'DONATE', donate_path, class:'nav-link' %>
-                              </li>
-                              <li class="nav-item" id='projects'>
-                              <%= link_to 'OUR PROJECTS', projects_path, class:'nav-link' %>
-                              </li>
-                            </ul>
-                          </div>
-                  </nav>
+                  <section>
+                    <div class="row">
+                      <div class="container">
+                        <h1 id="myModal">AS21</h1>
+                      </div>
+                    </div>
+                  </section>
+                  
+
 
                   <script>
-                    var show = false;
-                    document.getElementById('toggler').addEventListener('click',function(){
-                      var nav= document.getElementById('navbarSupportedContent');
-                      if(!show)
-                      {
-                        nav.classList.add('show');
-                        show = true;
-                      }
-                      else
-                      {
-                        nav.classList.remove('show');
-                        show = false;
-                      }
-
-                    })
-
-
-
-                      var urls=['join','donate','projects','volunteers'];
-                      var url='home';
-                      urls.forEach(function (item, index) {
-                        if (window.location.href.indexOf(item) > -1) {
-                          url=urls[index];
+                      var show = false;
+                      document.getElementById('toggler').addEventListener('click',function(){
+                        var nav= document.getElementById('navbarSupportedContent');
+                        if(!show)
+                        {
+                          nav.classList.add('show');
+                          show = true;
+                        }
+                        else
+                        {
+                          nav.classList.remove('show');
+                          show = false;
                         }
                       });
+                      
+                      console.log(show);
+                        var urls=['join','projects','volunteers','help'];
+                        var url='home';
+                        urls.forEach(function (item, index) {
+                          if (window.location.href.indexOf(item) > -1) {
+                            url=urls[index];
+                          }
+                        });
+                        document.getElementById(url).classList.add('active');
+                        document.getElementById(url).children[0].style.color="#fff"
+                        
+                    </script>
 
-                      document.getElementById(url).classList.add('active');
+<script>
+ 
+//  $(document).ready(function(){
+//                         $(".navbar-toggler-icon").click(function(){
+//                         $("#myModal").modal({backdrop: true});
+//                           });
+//             });
 
-                  </script>
+// $(document).ready(function(){
+//   $(".navbar-toggler-icon").click(function(){
+//     $("#myModal").modal();
+//   });
+// });
+
+  // document.querySelector("navbar-toggler-icon").addEventListener("click", function() {
+  //   backdrop = true;
+  // });
+  </script>
+
+                  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
