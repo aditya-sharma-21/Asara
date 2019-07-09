@@ -10,6 +10,48 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+          <!-- <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%> -->
+          <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="on()"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item" id='home'>
+                      <a href="join.html">Home</a>
+                      <!-- <%= link_to 'HOMEPAGE', root_path, class:'nav-link', style:'color:#000' %> -->
+                    </li>
+                    <li class="nav-item" id='join'>
+                        <a href="join.html">Home</a>
+                      <!-- <%= link_to 'JOIN US', join_path, class:'nav-link', style:'color:#000' %> -->
+                    </li>
+                    <li class="nav-item" id='volunteers'>
+                        <a href="join.html">Home</a>
+                      <!-- <%= link_to 'OUR VOLUNTEERS', volunteers_path, class:'nav-link', style:'color:#000' %> -->
+                    </li>
+                    
+                    <li class="nav-item" id='projects'>
+                        <a href="join.html">Home</a>
+                    <!-- <%= link_to 'OUR PROJECTS', projects_path, class:'nav-link', style:'color:#000' %> -->
+                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Donate Us</a>
+                              <a class="dropdown-item" href="#volunteer">Volunteer</a>
+                              <a class="dropdown-item" href="#partnership">Partnerships</a>
+                              <a class="dropdown-item" href="#donate">Donate</a>
+                              <a class="dropdown-item" href="#intern">Internships</a>
+                              <a class="dropdown-item" href="#vv">Virtual Volunteer</a>
+
+                            </div>
+                          </li>
+                    <!-- <%= link_to 'HELP US', help_us_path, class:'nav-link', style:'color:#000' %> -->
+                  </ul>
+                </div>
+        </nav>
     <div class="container">
         <div class="row">
           <div class="col-2"></div>
@@ -26,7 +68,7 @@
         <div class="col">
           <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
             <div class="card-body">
-              <h4 class="card-title"> Volunteer</h4>
+              <h4 class="card-title" id="volunteer"> Volunteer</h4>
               <p class="card-text">Join us hand in hand and make an impact. Get in touch to become a volunteer</p>
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
             </div>
@@ -36,7 +78,7 @@
           <div class="col">
             <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
               <div class="card-body">
-                <h4 class="card-title"> Partnerships</h4>
+                <h4 class="card-title" id="partnership"> Partnerships</h4>
                 <p class="card-text">If you share the same vision as us, please contact and collaborate with us.</p>
                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
               </div>
@@ -48,7 +90,7 @@
           <div class="col">
             <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
               <div class="card-body">
-                <h4 class="card-title"> Donate</h4>
+                <h4 class="card-title" id="donate"> Donate</h4>
                 <p class="card-text">Soon we will come with cyber-safe ways for you to donate. For now, reach out to us. This will really help us with the cause.</p>
                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
               </div>
@@ -60,7 +102,7 @@
         <div class="col">
           <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%">
             <div class="card-body">
-              <h4 class="card-title"> Internships</h4>
+              <h4 class="card-title" id="intern"> Internships</h4>
               <p class="card-text">We are running programs, where you can apply as an Intern. Reach out to us for more information.</p>
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
             </div>
@@ -70,7 +112,7 @@
           <div class="col">
             <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
               <div class="card-body">
-                <h4 class="card-title">Virtual Volunteer</h4>
+                <h4 class="card-title" id="vv">Virtual Volunteer</h4>
                 <p class="card-text">We understand being physically present is not always possible, but that does not restrict you to make an impact. You can still support and make your contribution to the cause virtually.</p>
                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
               </div>
