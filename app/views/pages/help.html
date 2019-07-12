@@ -8,11 +8,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    
+    </style>
+
   </head>
   <body>
 
       <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
           <!-- <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%> -->
+          <img src="../../assets/images/justice.png" alt="File Not Found" width="100px" height="100px" id="logo" style="transition: 0.2s">
           <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" onclick="on()"></span>
           </button>
@@ -46,7 +51,6 @@
                               <a class="dropdown-item" href="#donate">Donate</a>
                               <a class="dropdown-item" href="#intern">Internships</a>
                               <a class="dropdown-item" href="#vv">Virtual Volunteer</a>
-
                             </div>
                           </li>
                     <!-- <%= link_to 'HELP US', help_us_path, class:'nav-link', style:'color:#000' %> -->
@@ -144,5 +148,21 @@
         </div>
       </div>
     </div>
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+            document.getElementById("logo").width = "30";
+            document.getElementById("logo").height = "30";
+          }
+          else {
+            document.getElementById("logo").height = "100";
+            document.getElementById("logo").width = "100";
+          }
+        }
+        </script>
   </body>
 </html>
