@@ -1,26 +1,47 @@
-<h2 class="h1-responsive font-weight-bold text-center my-5">Donate</h2>
-
-       <div class="container" style="margin-bottom: 5%;padding-top: 5%">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aasra</title>
+    <!-- <%= csrf_meta_tags %>
+    <%= csp_meta_tag %> -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Homepage|Asara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
+  
+  </head>
+  <body>
+       <h2 class="h1-responsive font-weight-bold text-center my-5">Donate</h2>
+       <div class="container">
            <div class="row">
-               <div class="col">
-                   <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm"/>
+               <div class="col col-lg-3">
+                    <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm" style="height: 166px; padding: 0%; margin: 0%;"/>
+                    <input type="button" class="toggle-button btn-block button-active" value="UPI" id="upi" style="height: 166px; padding: 0%; margin: 0%;"/>
+                    <input type="button" class="toggle-button btn-block button-active" value="Bank" id="bank" style="height: 166px; padding: 0%; margin: 0%;"/>
+
                </div>
                <div class="col">
-                   <input type="button" class="toggle-button btn-block" value="UPI" id="upi" />
-               </div>
-               <div class="col">
-                   <input type="button" class="toggle-button btn-block" value="Bank" id="bank" />
+                    <div class="payment-block" id="payment-block">
+                            <img src="https://picsum.photos/300/500">
+                        </div>
                </div>
            </div>
        </div>
-       <div class="container" style="margin-bottom: 20%">
-           <div class="row">
-               <div class="payment-block" id="payment-block">
-                   <img src="https://picsum.photos/300/500">
-               </div>
-           </div>
-       </div>
 
+</body>
 <script type="text/javascript">
   var addActiveClass = function(buttonPressed){
     document.getElementById('paytm').classList.remove('button-active');
@@ -53,3 +74,7 @@ document.getElementById('bank').addEventListener('click',function(){
 <script type="text/javascript">
   stick = false;
 </script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

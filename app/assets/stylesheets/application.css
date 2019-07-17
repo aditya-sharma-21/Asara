@@ -87,7 +87,7 @@
 
 .slideshow-image{
   width: 100% !important;
-height: 45vw !important;
+height: 50% !important;
 }
 
 @media screen and (max-width: 425px) {
@@ -103,13 +103,9 @@ height: 45vw !important;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .form-area {
     width: 100% !important;
     margin: auto !important;
   }
 }
-
-/* .new-form {
-  margin: auto;
-} */

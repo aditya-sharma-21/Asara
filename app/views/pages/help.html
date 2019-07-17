@@ -8,6 +8,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Aasra</title>
+    <!-- <%= csrf_meta_tags %>
+    <%= csp_meta_tag %> -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Homepage|Asara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
     
     </style>
@@ -17,7 +34,7 @@
 
       <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
           <!-- <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%> -->
-          <img src="../../assets/images/justice.png" alt="File Not Found" width="100px" height="100px" id="logo" style="transition: 0.2s">
+          <img src="../../assets/images/justice.png" alt="File Not Found" width="90px" height="90px" id="logo" style="transition: 0.2s">
           <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" onclick="on()"></span>
           </button>
@@ -137,13 +154,13 @@
           </div>
           <div class="modal-body">
             <p>Reach out to us for more information.<br>
-              Email :- aasrafoundationjaipur@gmail.com<br>
-              Contact :- Vivek Sharma (+91-9660573866)<br>
-              <a href="https://www.facebook.com/aasrafoundationjaipur16/">https://www.facebook.com/aasrafoundationjaipur16/ </a>
+              <b> <i class="far fa-envelope" style="font-size: 20px; color : #C54D42; padding-right: 10px;"></i> Email :- <a href="mailto:/aasrafoundationjaipur@gmail.com">aasrafoundationjaipur@gmail.com</a></b><br>
+              <i class="fas fa-phone" style="font-size: 20px; color : #4C6EF5;  transform: scaleX(-1);"></i> Contact :- Vivek Sharma <b>(+91-9660573866)</b><br>
+              <i class="fab fa-facebook-f" style="font-size: 20px; color : #3C5998"></i><a href="https://www.facebook.com/aasrafoundationjaipur16/">https://www.facebook.com/aasrafoundationjaipur16/ </a>
             </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -154,15 +171,28 @@
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-          if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("logo").width = "30";
             document.getElementById("logo").height = "30";
           }
+          // else {
+          //   document.getElementById("logo").height = "90";
+          //   document.getElementById("logo").width = "90";
+          // }
+          else if(document.body.scrollTop < 50 || document.documentElement.scrollTop < 50){
+            document.getElementById("logo").height = "90";
+            document.getElementById("logo").width = "90";
+          }
           else {
-            document.getElementById("logo").height = "100";
-            document.getElementById("logo").width = "100";
+            document.getElementById("logo").width = "50";
+            document.getElementById("logo").height = "50";
           }
         }
+
         </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
