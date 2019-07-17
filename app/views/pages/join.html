@@ -40,9 +40,9 @@
                                         <span class="input-group-text" id="inputGroupFileAddon01">Upload Picture</span>
                                     </div>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                        aria-describedby="inputGroupFileAddon01">
+                                        <input type="file" class="custom-file-input" id="photofile" aria-describedby="inputGroupFileAddon01">
                                         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        <span id="photo" class="text-danger"></span>
                                     </div>
                                     </div>
                                     </div>
@@ -51,7 +51,8 @@
                                     <!-- Form Group -->
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="name" id="name" placeholder="First Name">
+                                            <input type="text" class="form-control mb-30" name="name" id="fname" placeholder="First Name">
+                                            <span id="first" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <!-- Form Group -->
@@ -59,43 +60,49 @@
                                     <!-- Form Group -->
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Last Name">
+                                            <input type="text" class="form-control mb-30" name="name" id="lname" placeholder="Last Name">
+                                            <span id="last" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <!-- Form Group -->
 
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="number" class="form-control mb-30" name="name" id="name2" placeholder="Age">
+                                            <input type="number" class="form-control mb-30" name="name" id="age" placeholder="Age">
+                                            <span id="selectAge" class="text-danger"></span>
                                         </div>
                                     </div>
 
                                     <div class="col-6 col-lg-6">
                                       <div class="form-group">
-                                          <select class="form-control" id="sel1" placeholder="Blood Group">
+                                          <select class="form-control" id="gender" placeholder="Blood Group">
                                             <option value="" disabled selected>Gender</option>
                                             <option>MALE</option>
                                             <option>FEMALE</option>
                                             <option>OTHER</option>
                                           </select>
+                                          <span id="selectGender" class="text-danger"></span>
                                         </div>
                                     </div>
 
                                     <!-- Form Group -->
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control mb-30" name="email" id="email" placeholder="Address">
+                                            <input type="email" class="form-control mb-30" name="email" id="address" placeholder="Address">
+                                            <span id="selectAddress" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <!-- Form Group -->
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Contact">
+                                            <input type="text" class="form-control mb-30" name="subject" id="contact" placeholder="Contact">
+                                            <span id="selectContact" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <div class="col-6 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="contact" id="contact" placeholder="Email">
+                                            <input type="text" class="form-control mb-30" name="contact" id="email" placeholder="Email">
+                                            <span id="selectEmail" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <!-- Form Group -->
@@ -103,7 +110,7 @@
                                 <!-- Form Group -->
                                 <div class="col-6 col-lg-6">
                                   <div class="form-group">
-                                      <select class="form-control" id="sel1" placeholder="Blood Group">
+                                      <select class="form-control" id="bg" placeholder="Blood Group">
                                         <option value="" disabled selected>Blood Group</option>
                                         <option>A+</option>
                                         <option>A-</option>
@@ -114,11 +121,12 @@
                                         <option>AB+</option>
                                         <option>AB-</option>
                                       </select>
+                                      <span id="selectBg" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <!-- Button -->
                                 <div class="col-12" align="center" style="padding: 50px">
-                                    <button type="submit" class="btn btn-success">SUBMIT <i ></i></button>
+                                    <button type="button" class="btn btn-success">SUBMIT<i></i></button>
                                 </div>
                             </div>
                         </div>
@@ -126,9 +134,58 @@
                 </div>
             </div>
         </div>
+<script>
+    
+document.getElementById('fname').addEventListener('click', function() {
+    if(document.getElementById('fname').value.length == 0) {
+        document.getElementById('first').innerHTML = 'please enter the field';
+        if(document.getElementById('fname').value.length != 0) {
+            document.getElementById('first').innerHTML = 'OK';
+        }
+    }
+});
+document.getElementById('lname').addEventListener('click', function() {
+    if(document.getElementById('lname').value.length == 0) {
+        document.getElementById('last').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('age').addEventListener('click', function() {
+    if(document.getElementById('age').value.length == 0) {
+        document.getElementById('selectAge').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('gender').addEventListener('click', function() {
+    if(document.getElementById('gender').value == 'GENDER') {
+        document.getElementById('selectGender').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('address').addEventListener('click', function() {
+    if(document.getElementById('address').value.length == 0) {
+        document.getElementById('selectAddress').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('contact').addEventListener('click', function() {
+    if(document.getElementById('contact').value.length == 0) {
+        document.getElementById('selectContact').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('email').addEventListener('click', function() {
+    if(document.getElementById('email').value.length == 0) {
+        document.getElementById('selectEmail').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('bg').addEventListener('click', function() {
+    if(document.getElementById('bg').value.length == 0) {
+        document.getElementById('selectBg').innerHTML = 'please enter the field';
+    }
+});
+document.getElementById('photofile').addEventListener('click', function() {
+    if(document.getElementById('photofile').value.length == 0) {
+        document.getElementById('file').innerHTML = 'please enter the field';
+    }
+});
 
-<script type="text/javascript">
-  stick = false;
+
 </script>
 
 </body>
