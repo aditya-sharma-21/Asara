@@ -126,7 +126,7 @@
                                 </div>
                                 <!-- Button -->
                                 <div class="col-12" align="center" style="padding: 50px">
-                                    <button type="button" class="btn btn-success">SUBMIT<i></i></button>
+                                    <button type="button" class="btn btn-success" onclick="size();">SUBMIT<i></i></button>
                                 </div>
                             </div>
                         </div>
@@ -136,17 +136,51 @@
         </div>
 <script>
     
+// function size() {
+//     alert("Size: "+document.getElementById('fname').value.length);
+//     document.getElementById('fname').addEventListener('click', function() {
+//         document.getElementById('first').innerHTML = 'OK';
+//     });
+// }
+
 document.getElementById('fname').addEventListener('click', function() {
     if(document.getElementById('fname').value.length == 0) {
         document.getElementById('first').innerHTML = 'please enter the field';
-        if(document.getElementById('fname').value.length != 0) {
-            document.getElementById('first').innerHTML = 'OK';
-        }
     }
+});
+document.addEventListener('click', function() {
+    if(document.getElementById('fname').value.length != 0) {
+        document.getElementById('first').innerHTML = 'OK';
+    }
+    if(document.getElementById('lname').value.length != 0) {
+        document.getElementById('last').innerHTML = 'OK';
+    }
+    if(document.getElementById('age').value.length != 0) {
+        document.getElementById('selectAge').innerHTML = 'OK';
+    }
+    if(document.getElementById('gender').value.length != 0) {
+        document.getElementById('selectGender').innerHTML = 'OK';
+    }
+    if(document.getElementById('address').value.length != 0) {
+        document.getElementById('selectAddress').innerHTML = 'OK';
+    }
+    if(document.getElementById('contact').value.length != 0) {
+        document.getElementById('selectContact').innerHTML = 'OK';
+    }
+    if(document.getElementById('email').value.length != 0) {
+        document.getElementById('selectEmail').innerHTML = 'OK';
+    }
+    if(document.getElementById('bg').value.length != 0) {
+        document.getElementById('selectBg').innerHTML = 'OK';
+    }
+    
 });
 document.getElementById('lname').addEventListener('click', function() {
     if(document.getElementById('lname').value.length == 0) {
         document.getElementById('last').innerHTML = 'please enter the field';
+    }
+    else if(document.getElementById('lname').value.length != 0) {
+        document.getElementById('last').innerHTML = 'OK!!!'
     }
 });
 document.getElementById('age').addEventListener('click', function() {
@@ -155,7 +189,7 @@ document.getElementById('age').addEventListener('click', function() {
     }
 });
 document.getElementById('gender').addEventListener('click', function() {
-    if(document.getElementById('gender').value == 'GENDER') {
+    if(document.getElementById('gender').value.length == 0) {
         document.getElementById('selectGender').innerHTML = 'please enter the field';
     }
 });
