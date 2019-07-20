@@ -128,8 +128,8 @@
 
     var getId;
     var getInputId = ['fname', 'lname', 'age', 'gender', 'address', 'contact', 'email', 'bg'];
-    var getSpanId = ['first', 'last', 'selectAge', 'selectGender', 'selectAddress', 'selectContact', 'selectBg'];
-    
+    var getSpanId = ['first', 'last', 'selectAge', 'selectGender', 'selectAddress', 'selectContact', 'selectEmail', 'selectBg'];
+    var i;
     var obj = {
         fname : false,
         lname : false,
@@ -139,14 +139,28 @@
         email : false,
         bg : false
     };
+    forSubmitButton();
+
+    function forSubmitButton() {
+        if(!obj.getInputId) {
+            if(document.getElementById(getInputId[i]).value.length != 0) {
+                document.getElementById('myBtn').disabled = false;
+            }
+            else {
+                document.getElementById('myBtn').disabled = true;
+            }
+        }
+        else {
+            document.getElementById('myBtn').disabled = true;
+        }
+    }
 
     function forAll() {
-        for(var i=0; i<getInputId.length; i++) {
+        for(i=0; i<getInputId.length; i++) {
             if(document.getElementById(getInputId[i]).value.length != 0) {
                 console.log(getInputId[i]);
                 document.getElementById(getSpanId[i]).innerHTML = 'OK!!!';
-                // console.log(getInputId[i]);
-                // console.log(getSpanId[i]);
+                // obj.getInputId[i] = false;
             }
         }
     }
@@ -154,8 +168,8 @@
         function values(inputId, spanId) {
             if(!obj.inputId) {
                 if(document.getElementById(inputId).value.length == 0) {
-                    obj.fname = true;
-                    document.getElementById(spanId).innerHTML = 'Please Enter the Field';                
+                    document.getElementById(spanId).innerHTML = 'Please Enter the Field';
+                    // obj.inputId = true;
                 }
             }
             forAll();
