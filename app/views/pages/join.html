@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Aasra</title>
-                <!-- <%= csrf_meta_tags %>
-                <%= csp_meta_tag %> -->
-                <meta charset="UTF-8">
-                <meta name="description" content="">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-                <title>Homepage|Asara</title>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
-            
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-                <link rel="stylesheet" href="../../assets/stylesheets/application.css">
-                <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-                <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
-              
-              </head>
-
-              <body>
-
-<div class="col-12">
+    <head>
+        <title>Aasra</title>
+        <!-- <%= csrf_meta_tags %>
+        <%= csp_meta_tag %> -->
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <title>Homepage|Asara</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">            
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+        <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->              
+    </head>
+    <body>
+        <div class="col-12">
             <h2 class="h1-responsive font-weight-bold text-center my-5">Join Us</h2>
                 <!-- Form -->
                 <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
@@ -32,195 +28,171 @@
                         <form action="mail.php" method="post" id="main_contact_form">
                             <div class="contact_input_area form-area">
                                 <div id="success_fail_info"></div>
-                                <div class="row">
-                                    <div class="col-lg-4"></div>
-                                    <div class="col col-lg-4" style="padding-bottom:3%">
-                                    <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroupFileAddon01">Upload Picture</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="photofile" aria-describedby="inputGroupFileAddon01">
-                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                        <span id="photo" class="text-danger"></span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: auto;">
-                                    <!-- Form Group -->
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="name" id="fname" placeholder="First Name">
-                                            <span id="first" class="text-danger"></span>
+                                    <div class="row">
+                                        <div class="col-lg-4"></div>
+                                            <div class="col col-lg-4" style="padding-bottom:3%">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="picture">Upload Picture</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="photofile" aria-describedby="inputGroupFileAddon01">
+                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                        <span id="photo" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Form Group -->
-
-                                    <!-- Form Group -->
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="name" id="lname" placeholder="Last Name">
-                                            <span id="last" class="text-danger"></span>
+                                        <div class="row" style="margin: auto;">
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="fname" placeholder="First Name" onclick="dataGet('fname')">
+                                                <span id="first" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Form Group -->
-
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="number" class="form-control mb-30" name="name" id="age" placeholder="Age">
-                                            <span id="selectAge" class="text-danger"></span>
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="lname" placeholder="Last Name" onclick="dataGet('lname')">
+                                                <span id="last" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="col-6 col-lg-6">
-                                      <div class="form-group">
-                                          <select class="form-control" id="gender" placeholder="Blood Group">
-                                            <option value="" disabled selected>Gender</option>
-                                            <option>MALE</option>
-                                            <option>FEMALE</option>
-                                            <option>OTHER</option>
-                                          </select>
-                                          <span id="selectGender" class="text-danger"></span>
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control mb-30" name="name" id="age" placeholder="Age" onclick="dataGet('age')">
+                                                <span id="selectAge" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Form Group -->
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control mb-30" name="email" id="address" placeholder="Address">
-                                            <span id="selectAddress" class="text-danger"></span>
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <select class="form-control" id="gender" placeholder="Gender" onclick="dataGet('gender')">
+                                                    <option value="" disabled selected>Gender</option>
+                                                    <option>MALE</option>
+                                                    <option>FEMALE</option>
+                                                    <option>OTHER</option>
+                                                </select>
+                                                <span id="selectGender" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Form Group -->
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="subject" id="contact" placeholder="Contact">
-                                            <span id="selectContact" class="text-danger"></span>
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="address" placeholder="Address" onclick="dataGet('address')">
+                                                <span id="selectAddress" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mb-30" name="contact" id="email" placeholder="Email">
-                                            <span id="selectEmail" class="text-danger"></span>
+                                        <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" id="contact" placeholder="Contact" onclick="dataGet('contact')">
+                                                <span id="selectContact" class="text-danger"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Form Group -->
-
-                                <!-- Form Group -->
+                                        <div class="col-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="contact" id="email" placeholder="Email" onclick="dataGet('email')">
+                                                <span id="selectEmail" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
                                 <div class="col-6 col-lg-6">
-                                  <div class="form-group">
-                                      <select class="form-control" id="bg" placeholder="Blood Group">
-                                        <option value="" disabled selected>Blood Group</option>
-                                        <option>A+</option>
-                                        <option>A-</option>
-                                        <option>B+</option>
-                                        <option>B-</option>
-                                        <option>O+</option>
-                                        <option>O-</option>
-                                        <option>AB+</option>
-                                        <option>AB-</option>
-                                      </select>
-                                      <span id="selectBg" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <!-- Button -->
-                                <div class="col-12" align="center" style="padding: 50px">
-                                    <button type="button" class="btn btn-success" onclick="size();">SUBMIT<i></i></button>
+                                    <div class="form-group">
+                                        <select class="form-control" id="bg" placeholder="Blood Group" onclick="dataGet('bg')">
+                                            <option value="" disabled selected>Blood Group</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+                                            <option>B+</option>
+                                            <option>B-</option>
+                                            <option>O+</option>
+                                            <option>O-</option>
+                                            <option>AB+</option>
+                                            <option>AB-</option>
+                                        </select>
+                                    <span id="selectBg" class="text-danger"></span>
                                 </div>
                             </div>
+                            <!-- Button -->
+                            <div class="col-12" align="center" style="padding: 50px">
+                                <button type="button" class="btn btn-success" id="myBtn">SUBMIT<i></i></button>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
-        </div>
+         </div>
+    </div>
 <script>
+
+    var getId;
+    var getInputId = ['fname', 'lname', 'age', 'gender', 'address', 'contact', 'email', 'bg'];
+    var getSpanId = ['first', 'last', 'selectAge', 'selectGender', 'selectAddress', 'selectContact', 'selectBg'];
     
-// function size() {
-//     alert("Size: "+document.getElementById('fname').value.length);
-//     document.getElementById('fname').addEventListener('click', function() {
-//         document.getElementById('first').innerHTML = 'OK';
-//     });
-// }
+    var obj = {
+        fname : false,
+        lname : false,
+        gender : false,
+        address : false,
+        contact : false,
+        email : false,
+        bg : false
+    };
 
-document.getElementById('fname').addEventListener('click', function() {
-    if(document.getElementById('fname').value.length == 0) {
-        document.getElementById('first').innerHTML = 'please enter the field';
+    function forAll() {
+        for(var i=0; i<getInputId.length; i++) {
+            if(document.getElementById(getInputId[i]).value.length != 0) {
+                console.log(getInputId[i]);
+                document.getElementById(getSpanId[i]).innerHTML = 'OK!!!';
+                // console.log(getInputId[i]);
+                // console.log(getSpanId[i]);
+            }
+        }
     }
-});
-document.addEventListener('click', function() {
-    if(document.getElementById('fname').value.length != 0) {
-        document.getElementById('first').innerHTML = 'OK';
-    }
-    if(document.getElementById('lname').value.length != 0) {
-        document.getElementById('last').innerHTML = 'OK';
-    }
-    if(document.getElementById('age').value.length != 0) {
-        document.getElementById('selectAge').innerHTML = 'OK';
-    }
-    if(document.getElementById('gender').value.length != 0) {
-        document.getElementById('selectGender').innerHTML = 'OK';
-    }
-    if(document.getElementById('address').value.length != 0) {
-        document.getElementById('selectAddress').innerHTML = 'OK';
-    }
-    if(document.getElementById('contact').value.length != 0) {
-        document.getElementById('selectContact').innerHTML = 'OK';
-    }
-    if(document.getElementById('email').value.length != 0) {
-        document.getElementById('selectEmail').innerHTML = 'OK';
-    }
-    if(document.getElementById('bg').value.length != 0) {
-        document.getElementById('selectBg').innerHTML = 'OK';
-    }
-    
-});
-document.getElementById('lname').addEventListener('click', function() {
-    if(document.getElementById('lname').value.length == 0) {
-        document.getElementById('last').innerHTML = 'please enter the field';
-    }
-    else if(document.getElementById('lname').value.length != 0) {
-        document.getElementById('last').innerHTML = 'OK!!!'
-    }
-});
-document.getElementById('age').addEventListener('click', function() {
-    if(document.getElementById('age').value.length == 0) {
-        document.getElementById('selectAge').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('gender').addEventListener('click', function() {
-    if(document.getElementById('gender').value.length == 0) {
-        document.getElementById('selectGender').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('address').addEventListener('click', function() {
-    if(document.getElementById('address').value.length == 0) {
-        document.getElementById('selectAddress').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('contact').addEventListener('click', function() {
-    if(document.getElementById('contact').value.length == 0) {
-        document.getElementById('selectContact').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('email').addEventListener('click', function() {
-    if(document.getElementById('email').value.length == 0) {
-        document.getElementById('selectEmail').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('bg').addEventListener('click', function() {
-    if(document.getElementById('bg').value.length == 0) {
-        document.getElementById('selectBg').innerHTML = 'please enter the field';
-    }
-});
-document.getElementById('photofile').addEventListener('click', function() {
-    if(document.getElementById('photofile').value.length == 0) {
-        document.getElementById('file').innerHTML = 'please enter the field';
-    }
-});
 
-
+        function values(inputId, spanId) {
+            if(!obj.inputId) {
+                if(document.getElementById(inputId).value.length == 0) {
+                    obj.fname = true;
+                    document.getElementById(spanId).innerHTML = 'Please Enter the Field';                
+                }
+            }
+            forAll();
+        }
+        function dataGet(newData) {
+            getId = newData;
+            console.log(newData);
+            }
+            document.addEventListener('click', function() {
+                console.log(obj);
+                console.log(getId);
+                switch(getId) {
+                    case 'fname' : values('fname', 'first');
+                    break;
+                    case 'lname' : values('lname', 'last');
+                    break;
+                    case 'age' : values('age', 'selectAge');
+                    break;
+                    case 'gender' : values('gender', 'selectGender');
+                    break;
+                    case 'address' : values('address', 'selectAddress');
+                    break;
+                    case 'contact' : values('contact', 'selectContact');
+                    break;
+                    case 'email' : values('email', 'selectEmail');
+                    break;
+                    case 'bg' : values('bg', 'selectBg');
+                    break;
+                }
+            });
+            document.addEventListener('click', function() {
+                if(!fname) {
+                    if(document.getElementById('fname').value.length > 0) {
+                        document.getElementById('first').innerHTML = 'OK!!!';
+                    }
+                }
+            });
 </script>
-
 </body>
 </html>
