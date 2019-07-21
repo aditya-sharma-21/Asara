@@ -1,4 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Aasra</title>
+    <!-- <%= csrf_meta_tags %>
+    <%= csp_meta_tag %> -->
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Homepage|Asara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
 <h2 class="h1-responsive font-weight-bold text-center my-5">Our Projects</h2>
 
 
@@ -19,7 +49,7 @@
       <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
         eveniet ut et voluptates repudiandae.
       </p>
-      <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> View project</a>
+      <a class="btn btn-indigo btn-sm" data-toggle="modal" data-target="#myModal1"><i class="fas fa-clone left"></i> View project</a>
     </div>
   </div>
   <!-- Grid column -->
@@ -39,7 +69,7 @@
       <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
         eveniet ut et voluptates repudiandae.
       </p>
-      <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> View project</a>
+      <a class="btn btn-indigo btn-sm" data-toggle="modal" data-target="#myModal2"><i class="fas fa-clone left"></i> View project</a>
     </div>
   </div>
   <!-- Grid column -->
@@ -59,12 +89,116 @@
       <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
         eveniet ut et voluptates repudiandae.
       </p>
-      <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> View project</a>
+      <a class="btn btn-indigo btn-sm"  data-toggle="modal" data-target="#myModal3"><i class="fas fa-clone left"></i> View project</a>
     </div>
   </div>
   <!-- Grid column -->
   </div>
+
+<!-- Modals -->
+
+  <!-- Modal  Number 1-->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Title Of Project</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <!-- <p>Some text in the modal.</p> -->
+          <img src="https://picsum.photos/800/300" class="img-fluid" alt="Sample project image">
+          <div class="row">
+            <div class="col-ls-3"> <h2>Description</h2> </div>
+            <div class="col-ls-9"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut perspiciatis perferendis, aperiam tempora rem quibusdam obcaecati repellat deleniti harum alias. Suscipit sint dignissimos illum ut fugiat repellat a veniam reprehenderit.</p> </div>
+            <div class="col-6"><h4>Date</h4></div>
+            <div class="col-6"><p>Data</p></div>
+            <div class="col-6"><h4>Time</h4></div>
+            <div class="col-6"><p>time</p></div>
+            <div class="col-6"><h4>Participants</h4></div>
+            <div class="col-6"><p>Number of Participants</p></div>
+          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-indigo btn-sm" data-dismiss="modal" style="color: white;">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal  Number 2-->
+  <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Title Of Project</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <!-- <p>Some text in the modal.</p> -->
+            <img src="https://picsum.photos/800/300" class="img-fluid" alt="Sample project image">
+            <div class="row">
+              <div class="col-ls-3"> <h2>Description</h2> </div>
+              <div class="col-ls-9"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut perspiciatis perferendis, aperiam tempora rem quibusdam obcaecati repellat deleniti harum alias. Suscipit sint dignissimos illum ut fugiat repellat a veniam reprehenderit.</p> </div>
+              <div class="col-6"><h4>Date</h4></div>
+              <div class="col-6"><p>Data</p></div>
+              <div class="col-6"><h4>Time</h4></div>
+              <div class="col-6"><p>time</p></div>
+              <div class="col-6"><h4>Participants</h4></div>
+              <div class="col-6"><p>Number of Participants</p></div>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-indigo btn-sm" data-dismiss="modal" style="color: white;">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Modal  Number 3-->
+  <div class="modal fade" id="myModal3" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Title Of Project</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <!-- <p>Some text in the modal.</p> -->
+            <img src="https://picsum.photos/800/300" class="img-fluid" alt="Sample project image">
+            <div class="row">
+              <div class="col-ls-3"> <h2>Description</h2> </div>
+              <div class="col-ls-9"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut perspiciatis perferendis, aperiam tempora rem quibusdam obcaecati repellat deleniti harum alias. Suscipit sint dignissimos illum ut fugiat repellat a veniam reprehenderit.</p> </div>
+              <div class="col-6"><h4>Date</h4></div>
+              <div class="col-6"><p>Data</p></div>
+              <div class="col-6"><h4>Time</h4></div>
+              <div class="col-6"><p>time</p></div>
+              <div class="col-6"><h4>Participants</h4></div>
+              <div class="col-6"><p>Number of Participants</p></div>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-indigo btn-sm" data-dismiss="modal" style="color: white;">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
 
   <script type="text/javascript">
     stick = false;
   </script>
+</body>
+</html>
