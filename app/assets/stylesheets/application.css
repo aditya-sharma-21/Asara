@@ -92,7 +92,8 @@ height: 50% !important;
 
 @media screen and (max-width: 425px) {
   .slideshow-image{
-    height: 50vw !important;
+    width: 50% !important;
+    height: 400px !important;
   }
 }
 
