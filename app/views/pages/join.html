@@ -46,7 +46,7 @@
                                                     <div class="custom-file">
                                                         <input type="file" class="custom-file-input" id="photofile" aria-describedby="inputGroupFileAddon01">
                                                         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                                        <span id="photo" class="text-danger"></span>
+                                                        <span id="photo"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -56,21 +56,21 @@
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="name" id="fname" placeholder="First Name" onclick="dataGet('fname')">
-                                                <span id="first" class="text-danger"></span>
+                                                <span id="first"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="name" id="lname" placeholder="Last Name" onclick="dataGet('lname')">
-                                                <span id="last" class="text-danger"></span>
+                                                <span id="last"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="number" class="form-control mb-30" name="name" id="age" placeholder="Age" onclick="dataGet('age')">
-                                                <span id="selectAge" class="text-danger"></span>
+                                                <span id="selectAge"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -82,27 +82,27 @@
                                                     <option>FEMALE</option>
                                                     <option>OTHER</option>
                                                 </select>
-                                                <span id="selectGender" class="text-danger"></span>
+                                                <span id="selectGender"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="email" class="form-control mb-30" name="email" id="address" placeholder="Address" onclick="dataGet('address')">
-                                                <span id="selectAddress" class="text-danger"></span>
+                                                <span id="selectAddress"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="subject" id="contact" placeholder="Contact" onclick="dataGet('contact')">
-                                                <span id="selectContact" class="text-danger"></span>
+                                                <span id="selectContact"></span>
                                             </div>
                                         </div>
                                         <div class="col-6 col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="contact" id="email" placeholder="Email" onclick="dataGet('email')">
-                                                <span id="selectEmail" class="text-danger"></span>
+                                                <span id="selectEmail"></span>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -168,6 +168,8 @@
             if(document.getElementById(getInputId[i]).value.length != 0) {
                 console.log(getInputId[i]);
                 document.getElementById(getSpanId[i]).innerHTML = 'OK!!!';
+                document.getElementById(getSpanId[i]).style.color = 'green';
+                document.getElementById(getInputId[i]).style.borderColor = 'green';
                 // obj.getInputId[i] = false;
             }
         }
@@ -177,6 +179,8 @@
             if(!obj.inputId) {
                 if(document.getElementById(inputId).value.length == 0) {
                     document.getElementById(spanId).innerHTML = 'Please Enter the Field';
+                    document.getElementById(spanId).style.color = 'red';
+                    document.getElementById(inputId).style.borderColor = 'red';
                     // obj.inputId = true;
                 }
             }
