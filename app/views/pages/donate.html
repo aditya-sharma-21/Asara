@@ -310,24 +310,24 @@ document.getElementById('bank').addEventListener('click',function(){
                      <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm1"/>
                  </div>
                  <div>
-                   <span id="paytmSpan" class="hide">
-                     <img id="img1" src="https://picsum.photos/id/12/300/500"  style="padding-left : 50%; padding-top : 10px; padding-bottom : 10px;">
+                   <span id="paytmSpan" class="hide col-12">
+                     <img id="img1" src="https://picsum.photos/id/12/300/500" class="photos" style="padding-top : 10px; padding-bottom : 10px;">
                    </span>
                  </div>
                  <div class="col-12">
                      <input type="button" class="toggle-button btn-block" value="UPI" id="upi1"/>
                  </div>
                  <div>
-                    <span id="upiSpan" class="hide">
-                        <img id="img2" src="https://picsum.photos/id/24/300/500" style="padding-left : 50%; padding-top : 10px; padding-bottom : 10px;">
+                    <span id="upiSpan" class="hide col-12">
+                        <img id="img2" src="https://picsum.photos/id/24/300/500" class="photos" style=" padding-top : 10px; padding-bottom : 10px;">
                     </span>
                   </div>
                  <div class="col-12">
                      <input type="button" class="toggle-button btn-block" value="Bank" id="bank1"/>
                  </div>
                  <div>
-                    <span id="bankSpan" class="hide">
-                        <img id="img3" src="https://picsum.photos/id/36/300/500" style="padding-left : 50%; padding-top : 10px; padding-bottom : 10px;">
+                    <span id="bankSpan" class="hide col-12">
+                        <img id="img3" src="https://picsum.photos/id/36/300/500" class="photos" style=" padding-top : 10px; padding-bottom : 10px;">
                     </span>
                   </div>
              </div>
@@ -387,15 +387,7 @@ document.getElementById('bank').addEventListener('click',function(){
         </div>
 
         <style>
-          @media screen and (max-width : 1000px) {
-            .laptop {
-              display : none;
-            }
-            .mobile {
-              display: block !important;
-            }
-          }
-
+        /* Desktop View */
           @media screen and (max-width : 2560px) {
             .mobile {
               display: none;
@@ -403,6 +395,58 @@ document.getElementById('bank').addEventListener('click',function(){
             .laptop {
               display: show;
             }
+          }
+
+          /* Tablet View */
+          @media screen and (max-width : 768px) {
+            .laptop {
+              display : none;
+            }
+            .mobile {
+              display: block !important;
+            }
+            .photos{
+              width: 679px;
+            } 
+          }
+
+          /* Mobile -L view */
+          @media screen and (max-width : 426px) {
+            .laptop {
+              display : none;
+            }
+            .mobile {
+              display: block !important;
+            }
+            .photos{
+              width: 354px;
+            } 
+          }
+
+          /* Mobile -M view */
+          @media screen and (max-width : 380px) {
+            .laptop {
+              display : none;
+            }
+            .mobile {
+              display: block !important;
+            }
+            .photos{
+              width: 306px;
+            } 
+          }
+
+          /* Mobile -S view */
+          @media screen and (max-width : 321px) {
+            .laptop {
+              display : none;
+            }
+            .mobile {
+              display: block !important;
+            }
+            .photos{
+              width: 254px;
+            } 
           }
         </style>
         
