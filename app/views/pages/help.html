@@ -1,195 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>Aasra</title>
-    <!-- <%= csrf_meta_tags %>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Aasra</title>
+  <!-- <%= csrf_meta_tags %>
     <%= csp_meta_tag %> -->
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <title>Homepage|Asara</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="../../assets/stylesheets/application.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Homepage|Asara</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  </head>
-  <body>
+</head>
 
-      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
-          <!-- <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%> -->
-          <img src="../../assets/images/justice.png" alt="File Not Found" width="90px" height="90px" id="logo" style="transition: 0.2s">
-          <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" onclick="on()"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                    <li class="nav-item" id='home'>
-                      <a href="join.html">Home</a>
-                      <!-- <%= link_to 'HOMEPAGE', root_path, class:'nav-link', style:'color:#000' %> -->
-                    </li>
-                    <li class="nav-item" id='join'>
-                        <a href="join.html">Home</a>
-                      <!-- <%= link_to 'JOIN US', join_path, class:'nav-link', style:'color:#000' %> -->
-                    </li>
-                    <li class="nav-item" id='volunteers'>
-                        <a href="join.html">Home</a>
-                      <!-- <%= link_to 'OUR VOLUNTEERS', volunteers_path, class:'nav-link', style:'color:#000' %> -->
-                    </li>
-                    
-                    <li class="nav-item" id='projects'>
-                        <a href="join.html">Home</a>
-                    <!-- <%= link_to 'OUR PROJECTS', projects_path, class:'nav-link', style:'color:#000' %> -->
-                    </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Donate Us</a>
-                              <a class="dropdown-item" href="#volunteer">Volunteer</a>
-                              <a class="dropdown-item" href="#partnership">Partnerships</a>
-                              <a class="dropdown-item" href="#donate">Donate</a>
-                              <a class="dropdown-item" href="#intern">Internships</a>
-                              <a class="dropdown-item" href="#vv">Virtual Volunteer</a>
-                            </div>
-                          </li>
-                    <!-- <%= link_to 'HELP US', help_us_path, class:'nav-link', style:'color:#000' %> -->
-                  </ul>
-                </div>
-        </nav>
-    <div class="container">
-        <div class="row">
-          <div class="col-2"></div>
-            <div class="col-8">
-              <h2 class="h1-responsive font-weight-bold text-center my-5">How can you help</h2>
-              <!-- Section description -->
-              <p class="lead grey-text text-center w-responsive mx-auto mb-5">Even a small amount of your time and effort can make a large difference. You can help and support in various ways.</p>
-            </div>
-            <div class="col-2"></div>
-        </div>
+<body>
+
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <!-- <%= link_to image_tag( "A2.png", class:'navbar-brand navbar-logo img-circle', style:'margin-left:10%;' ),root_path%> -->
+    <img src="../../assets/images/justice.png" alt="File Not Found" width="90px" height="90px" id="logo"
+      style="transition: 0.2s">
+    <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" onclick="on()"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item" id='home'>
+          <a href="join.html">Home</a>
+          <!-- <%= link_to 'HOMEPAGE', root_path, class:'nav-link', style:'color:#000' %> -->
+        </li>
+        <li class="nav-item" id='join'>
+          <a href="join.html">Home</a>
+          <!-- <%= link_to 'JOIN US', join_path, class:'nav-link', style:'color:#000' %> -->
+        </li>
+        <li class="nav-item" id='volunteers'>
+          <a href="join.html">Home</a>
+          <!-- <%= link_to 'OUR VOLUNTEERS', volunteers_path, class:'nav-link', style:'color:#000' %> -->
+        </li>
+
+        <li class="nav-item" id='projects'>
+          <a href="join.html">Home</a>
+          <!-- <%= link_to 'OUR PROJECTS', projects_path, class:'nav-link', style:'color:#000' %> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Donate Us</a>
+            <a class="dropdown-item" href="#volunteer">Volunteer</a>
+            <a class="dropdown-item" href="#partnership">Partnerships</a>
+            <a class="dropdown-item" href="#donate">Donate</a>
+            <a class="dropdown-item" href="#intern">Internships</a>
+            <a class="dropdown-item" href="#vv">Virtual Volunteer</a>
+          </div>
+        </li>
+        <!-- <%= link_to 'HELP US', help_us_path, class:'nav-link', style:'color:#000' %> -->
+      </ul>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
-            <div class="card-body">
-              <h4 class="card-title" id="volunteer"> Volunteer</h4>
-              <p class="card-text">Join us hand in hand and make an impact. Get in touch to become a volunteer</p>
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
-            </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">How can you help</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Even a small amount of your time and effort can
+          make a large difference. You can help and support in various ways.</p>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
+          <div class="card-body">
+            <h4 class="card-title" id="volunteer"> Volunteer</h4>
+            <p class="card-text">Join us hand in hand and make an impact. Get in touch to become a volunteer</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More
+              Information</a>
           </div>
         </div>
-        <div class="col"> </div>
-          <div class="col">
-            <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
-              <div class="card-body">
-                <h4 class="card-title" id="partnership"> Partnerships</h4>
-                <p class="card-text">If you share the same vision as us, please contact and collaborate with us.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
-              </div>
-            </div>
-          </div>
       </div>
-      <div class="row" style="padding: 50px;">
-        <div class="col"></div>
-          <div class="col">
-            <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
-              <div class="card-body">
-                <h4 class="card-title" id="donate"> Donate</h4>
-                <p class="card-text">Soon we will come with cyber-safe ways for you to donate. For now, reach out to us. This will really help us with the cause.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
-              </div>
-            </div>
-          </div>
-          <div class="col"></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%">
-            <div class="card-body">
-              <h4 class="card-title" id="intern"> Internships</h4>
-              <p class="card-text">We are running programs, where you can apply as an Intern. Reach out to us for more information.</p>
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
-            </div>
+      <div class="col"> </div>
+      <div class="col">
+        <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
+          <div class="card-body">
+            <h4 class="card-title" id="partnership"> Partnerships</h4>
+            <p class="card-text">If you share the same vision as us, please contact and collaborate with us.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More
+              Information</a>
           </div>
         </div>
-        <div class="col"> </div>
-          <div class="col">
-            <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
-              <div class="card-body">
-                <h4 class="card-title" id="vv">Virtual Volunteer</h4>
-                <p class="card-text">We understand being physically present is not always possible, but that does not restrict you to make an impact. You can still support and make your contribution to the cause virtually.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Information</a>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">More Information</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+    <div class="row" style="padding: 50px;">
+      <div class="col"></div>
+      <div class="col">
+        <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
+          <div class="card-body">
+            <h4 class="card-title" id="donate"> Donate</h4>
+            <p class="card-text">Soon we will come with cyber-safe ways for you to donate. For now, reach out to us.
+              This will really help us with the cause.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More
+              Information</a>
           </div>
-          <div class="modal-body">
-            <p>Reach out to us for more information.<br>
-              <b> <i class="far fa-envelope" style="font-size: 20px; color : #C54D42; padding-right: 10px;"></i> Email :- <a href="mailto:/aasrafoundationjaipur@gmail.com">aasrafoundationjaipur@gmail.com</a></b><br>
-              <i class="fas fa-phone" style="padding-left: 10px; font-size: 20px; color : #4C6EF5;  transform: scaleX(-1);"></i> Contact :- Vivek Sharma <b>(+91-9660573866)</b><br>
-              <i class="fab fa-facebook-f" style="font-size: 20px; color : #3C5998; padding-right: 10px;"></i><a href="https://www.facebook.com/aasrafoundationjaipur16/">https://www.facebook.com/aasrafoundationjaipur16/ </a>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%">
+          <div class="card-body">
+            <h4 class="card-title" id="intern"> Internships</h4>
+            <p class="card-text">We are running programs, where you can apply as an Intern. Reach out to us for more
+              information.<br><br></p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More
+              Information</a>
+          </div>
+        </div>
+      </div>
+      <div class="col"> </div>
+      <div class="col">
+        <div class="card" style="width:400px; border-radius: 20% 20% 20% 20%;">
+          <div class="card-body">
+            <h4 class="card-title" id="vv">Virtual Volunteer</h4>
+            <p class="card-text">We understand being physically present is not always possible, but that does not
+              restrict you to make an impact. You can still support and make your contribution to the cause virtually.
             </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More
+              Information</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">More Information</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Reach out to us for more information.<br>
+            <b> <i class="far fa-envelope" style="font-size: 20px; color : #C54D42; padding-right: 10px;"></i> Email :-
+              <a href="mailto:/aasrafoundationjaipur@gmail.com">aasrafoundationjaipur@gmail.com</a></b><br>
+            <i class="fas fa-phone"
+              style="padding-left: 10px; font-size: 20px; color : #4C6EF5;  transform: scaleX(-1);"></i> Contact :-
+            Vivek Sharma <b>(+91-9660573866)</b><br>
+            <i class="fab fa-facebook-f" style="font-size: 20px; color : #3C5998; padding-right: 10px;"></i><a
+              href="https://www.facebook.com/aasrafoundationjaipur16/">https://www.facebook.com/aasrafoundationjaipur16/
+            </a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("logo").width = "30";
-            document.getElementById("logo").height = "30";
-          }
-          // else {
-          //   document.getElementById("logo").height = "90";
-          //   document.getElementById("logo").width = "90";
-          // }
-          else if(document.body.scrollTop < 50 || document.documentElement.scrollTop < 50){
-            document.getElementById("logo").height = "90";
-            document.getElementById("logo").width = "90";
-          }
-          else {
-            document.getElementById("logo").width = "50";
-            document.getElementById("logo").height = "50";
-          }
-        }
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () {
+      scrollFunction()
+    };
 
-        </script>
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("logo").width = "30";
+        document.getElementById("logo").height = "30";
+      }
+      // else {
+      //   document.getElementById("logo").height = "90";
+      //   document.getElementById("logo").width = "90";
+      // }
+      else if (document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
+        document.getElementById("logo").height = "90";
+        document.getElementById("logo").width = "90";
+      } else {
+        document.getElementById("logo").width = "50";
+        document.getElementById("logo").height = "50";
+      }
+    }
+  </script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
