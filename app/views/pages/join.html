@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,111 +15,124 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <title>Homepage|Asara</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="../../assets/stylesheets/application.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  </head>
-  <body>
-        <div class="col-xl-1 col-lg-12">
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Join Us</h2>
-                <!-- Form -->
-                <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
-                    <div class="contact_form">
-                        <form action="mail.php" method="post" id="main_contact_form">
-                            <div class="contact_input_area form-area">
-                                <div id="success_fail_info"></div>
-                                    <div class="row">
-                                        <div class="col-lg-4"></div>
-                                            <div class="col col-lg-4" style="padding-bottom:3%">
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="picture">Upload Picture</span>
-                                                    </div>
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="photofile" aria-describedby="inputGroupFileAddon01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                                        <span id="photo"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin: auto;">
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="fname" placeholder="First Name" onclick="dataGet('fname')">
-                                                <span id="first"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="lname" placeholder="Last Name" onclick="dataGet('lname')">
-                                                <span id="last"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="number" class="form-control mb-30" name="name" id="age" placeholder="Age" onclick="dataGet('age')">
-                                                <span id="selectAge"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <select class="form-control" id="gender" placeholder="Gender" onclick="dataGet('gender')">
-                                                    <option value="" disabled selected>Gender</option>
-                                                    <option>MALE</option>
-                                                    <option>FEMALE</option>
-                                                    <option>OTHER</option>
-                                                </select>
-                                                <span id="selectGender"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control mb-30" name="email" id="address" placeholder="Address" onclick="dataGet('address')">
-                                                <span id="selectAddress"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject" id="contact" placeholder="Contact" onclick="dataGet('contact')">
-                                                <span id="selectContact"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="contact" id="email" placeholder="Email" onclick="dataGet('email')">
-                                                <span id="selectEmail"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                <div class="col-6 col-lg-6">
-                                    <div class="form-group">
-                                        <select class="form-control" id="bg" placeholder="Blood Group" onclick="dataGet('bg')">
-                                            <option value="" disabled selected>Blood Group</option>
-                                            <option>A+</option>
-                                            <option>A-</option>
-                                            <option>B+</option>
-                                            <option>B-</option>
-                                            <option>O+</option>
-                                            <option>O-</option>
-                                            <option>AB+</option>
-                                            <option>AB-</option>
-                                        </select>
+</head>
+
+<body>
+    <div class="col-xl-1 col-lg-12">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Join Us</h2>
+        <!-- Form -->
+        <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+            <div class="contact_form">
+                <form action="mail.php" method="post" id="main_contact_form">
+                    <div class="contact_input_area form-area">
+                        <div id="success_fail_info"></div>
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col col-lg-4" style="padding-bottom:3%">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="picture">Upload Picture</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="photofile"
+                                            aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        <span id="photo"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin: auto;">
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="name" id="fname"
+                                        placeholder="First Name" onclick="dataGet('fname')">
+                                    <span id="first"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="name" id="lname"
+                                        placeholder="Last Name" onclick="dataGet('lname')">
+                                    <span id="last"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control mb-30" name="name" id="age"
+                                        placeholder="Age" onclick="dataGet('age')">
+                                    <span id="selectAge"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="gender" placeholder="Gender"
+                                        onclick="dataGet('gender')">
+                                        <option value="" disabled selected>Gender</option>
+                                        <option>MALE</option>
+                                        <option>FEMALE</option>
+                                        <option>OTHER</option>
+                                    </select>
+                                    <span id="selectGender"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control mb-30" name="email" id="address"
+                                        placeholder="Address" onclick="dataGet('address')">
+                                    <span id="selectAddress"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="subject" id="contact"
+                                        placeholder="Contact" onclick="dataGet('contact')">
+                                    <span id="selectContact"></span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="contact" id="email"
+                                        placeholder="Email" onclick="dataGet('email')">
+                                    <span id="selectEmail"></span>
+                                </div>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="col-6 col-lg-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="bg" placeholder="Blood Group"
+                                        onclick="dataGet('bg')">
+                                        <option value="" disabled selected>Blood Group</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                    </select>
                                     <span id="selectBg" class="text-danger"></span>
                                 </div>
                             </div>
@@ -130,54 +144,55 @@
                     </div>
                 </form>
             </div>
-         </div>
+        </div>
     </div>
-<script>
+    <script>
+        var getId;
+        var getInputId = ['fname', 'lname', 'age', 'gender', 'address', 'contact', 'email', 'bg'];
+        var getSpanId = ['first', 'last', 'selectAge', 'selectGender', 'selectAddress', 'selectContact', 'selectEmail',
+            'selectBg'
+        ];
+        var i;
+        var obj = {
+            fname: false,
+            lname: false,
+            gender: false,
+            address: false,
+            contact: false,
+            email: false,
+            bg: false
+        };
+        // forSubmitButton();
 
-    var getId;
-    var getInputId = ['fname', 'lname', 'age', 'gender', 'address', 'contact', 'email', 'bg'];
-    var getSpanId = ['first', 'last', 'selectAge', 'selectGender', 'selectAddress', 'selectContact', 'selectEmail', 'selectBg'];
-    var i;
-    var obj = {
-        fname : false,
-        lname : false,
-        gender : false,
-        address : false,
-        contact : false,
-        email : false,
-        bg : false
-    };
-    // forSubmitButton();
+        // function forSubmitButton() {
+        //     if(!obj.getInputId) {
+        //         if(document.getElementById(getInputId[i]).value.length != 0) {
+        //             document.getElementById('myBtn').disabled = false;
+        //         }
+        //         else {
+        //             document.getElementById('myBtn').disabled = true;
+        //         }
+        //     }
+        //     else {
+        //         document.getElementById('myBtn').disabled = true;
+        //     }
+        // }
 
-    // function forSubmitButton() {
-    //     if(!obj.getInputId) {
-    //         if(document.getElementById(getInputId[i]).value.length != 0) {
-    //             document.getElementById('myBtn').disabled = false;
-    //         }
-    //         else {
-    //             document.getElementById('myBtn').disabled = true;
-    //         }
-    //     }
-    //     else {
-    //         document.getElementById('myBtn').disabled = true;
-    //     }
-    // }
-
-    function forAll() {
-        for(i=0; i<getInputId.length; i++) {
-            if(document.getElementById(getInputId[i]).value.length != 0) {
-                console.log(getInputId[i]);
-                document.getElementById(getSpanId[i]).innerHTML = 'OK!!!';
-                document.getElementById(getSpanId[i]).style.color = 'green';
-                document.getElementById(getInputId[i]).style.borderColor = 'green';
-                // obj.getInputId[i] = false;
+        function forAll() {
+            for (i = 0; i < getInputId.length; i++) {
+                if (document.getElementById(getInputId[i]).value.length != 0) {
+                    console.log(getInputId[i]);
+                    document.getElementById(getSpanId[i]).innerHTML = 'OK!!!';
+                    document.getElementById(getSpanId[i]).style.color = 'green';
+                    document.getElementById(getInputId[i]).style.borderColor = 'green';
+                    // obj.getInputId[i] = false;
+                }
             }
         }
-    }
 
         function values(inputId, spanId) {
-            if(!obj.inputId) {
-                if(document.getElementById(inputId).value.length == 0) {
+            if (!obj.inputId) {
+                if (document.getElementById(inputId).value.length == 0) {
                     document.getElementById(spanId).innerHTML = 'Please Enter the Field';
                     document.getElementById(spanId).style.color = 'red';
                     document.getElementById(inputId).style.borderColor = 'red';
@@ -186,39 +201,49 @@
             }
             forAll();
         }
+
         function dataGet(newData) {
             getId = newData;
             console.log(newData);
+        }
+        document.addEventListener('click', function () {
+            console.log(obj);
+            console.log(getId);
+            switch (getId) {
+                case 'fname':
+                    values('fname', 'first');
+                    break;
+                case 'lname':
+                    values('lname', 'last');
+                    break;
+                case 'age':
+                    values('age', 'selectAge');
+                    break;
+                case 'gender':
+                    values('gender', 'selectGender');
+                    break;
+                case 'address':
+                    values('address', 'selectAddress');
+                    break;
+                case 'contact':
+                    values('contact', 'selectContact');
+                    break;
+                case 'email':
+                    values('email', 'selectEmail');
+                    break;
+                case 'bg':
+                    values('bg', 'selectBg');
+                    break;
             }
-            document.addEventListener('click', function() {
-                console.log(obj);
-                console.log(getId);
-                switch(getId) {
-                    case 'fname' : values('fname', 'first');
-                    break;
-                    case 'lname' : values('lname', 'last');
-                    break;
-                    case 'age' : values('age', 'selectAge');
-                    break;
-                    case 'gender' : values('gender', 'selectGender');
-                    break;
-                    case 'address' : values('address', 'selectAddress');
-                    break;
-                    case 'contact' : values('contact', 'selectContact');
-                    break;
-                    case 'email' : values('email', 'selectEmail');
-                    break;
-                    case 'bg' : values('bg', 'selectBg');
-                    break;
+        });
+        document.addEventListener('click', function () {
+            if (!fname) {
+                if (document.getElementById('fname').value.length > 0) {
+                    document.getElementById('first').innerHTML = 'OK!!!';
                 }
-            });
-            document.addEventListener('click', function() {
-                if(!fname) {
-                    if(document.getElementById('fname').value.length > 0) {
-                        document.getElementById('first').innerHTML = 'OK!!!';
-                    }
-                }
-            });
-</script>
+            }
+        });
+    </script>
 </body>
+
 </html>

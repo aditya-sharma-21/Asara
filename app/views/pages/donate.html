@@ -305,15 +305,15 @@ document.getElementById('bank').addEventListener('click',function(){
          <div class="container" style="margin-bottom: 5%">
              <div class="row">
                  <div class="col-12">
-                     <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm1"/>
+                     <input type="button" class="toggle-button btn-block button-active" value="Paytm" id="paytm1" onclick="activeClass('paytm1', 'paytmSpan')"/>
                  </div>
                  <div>
-                   <span id="paytmSpan" class="hide col-12">
+                   <span id="paytmSpan" class="col-12">
                      <img id="img1" src="https://picsum.photos/id/12/300/500" class="photos" style="padding-top : 10px; padding-bottom : 10px;">
                    </span>
                  </div>
                  <div class="col-12">
-                     <input type="button" class="toggle-button btn-block" value="UPI" id="upi1"/>
+                     <input type="button" class="toggle-button btn-block" value="UPI" id="upi1" onclick="activeClass('upi1', 'upiSpan')"/>
                  </div>
                  <div>
                     <span id="upiSpan" class="hide col-12">
@@ -321,7 +321,7 @@ document.getElementById('bank').addEventListener('click',function(){
                     </span>
                   </div>
                  <div class="col-12">
-                     <input type="button" class="toggle-button btn-block" value="Bank" id="bank1"/>
+                     <input type="button" class="toggle-button btn-block" value="Bank" id="bank1" onclick="activeClass('bank1', 'bankSpan')"/>
                  </div>
                  <div>
                     <span id="bankSpan" class="hide col-12">
@@ -335,52 +335,79 @@ document.getElementById('bank').addEventListener('click',function(){
          
 
         <script>
-        document.getElementById('upiSpan').classList.add('hide');
-        document.getElementById('bankSpan').classList.add('hide');
-        document.getElementById('paytmSpan').classList.remove('hide');
-        document.getElementById('paytmSpan').classList.add('show');
-        document.getElementById('upiSpan').classList.remove('show');
-        document.getElementById('bankSpan').classList.remove('show');
+          var buttonArr = ['paytm1', 'upi1', 'bank1'];
+          var photoArr = ['paytmSpan', 'upiSpan', 'bankSpan'];
+          
+          document.getElementById('paytm1').classList.add('show');
+          document.getElementById('paytmSpan').classList.add('show');
+          function activeClass(selectButton, selectPhoto) {
+            document.getElementById('paytm1').classList.remove('button-active');
+            document.getElementById('paytmSpan').classList.add('hide');
+            document.getElementById(selectButton).classList.add('show');
+            // document.getElementById(selectPhoto).classList.remove('hide');
+            // document.getElementById(selectPhoto).classList.add('show');
+            console.log(selectButton);
+            removeClass();
+          }
+          
+          function removeClass() {
+            for(var i=0 ; i<buttonArr.length; i++) {
+              if(document.getElementById(buttonArr[i]).classList('show')) {
+                for(var j=0; j<photoArr; j++) {
+                  document.getElementById(photoArr[j]).classList.add('hide');
+                }
+                document.getElementById(photoArr[i]).classList.add('show');
+                document.getElementById(photoArr[i]).classList.remove('hide');
+              }
+            }
+          }
 
-        document.getElementById('paytm1').addEventListener('click',function(){
-        document.getElementById('paytm1').classList.add('button-active');
-        document.getElementById('upi1').classList.remove('button-active');
-        document.getElementById('bank1').classList.remove('button-active');
-        document.getElementById('upiSpan').classList.add('hide');
-        document.getElementById('bankSpan').classList.add('hide');
-        document.getElementById('paytmSpan').classList.remove('hide');
-        document.getElementById('paytmSpan').classList.add('show');
-        document.getElementById('upiSpan').classList.remove('show');
-        document.getElementById('bankSpan').classList.remove('show');
-        console.log('Paytm Pressed');
-        });
+        // document.getElementById('upiSpan').classList.add('hide');
+        // document.getElementById('bankSpan').classList.add('hide');
+        // document.getElementById('paytmSpan').classList.remove('hide');
+        // document.getElementById('paytmSpan').classList.add('show');
+        // document.getElementById('upiSpan').classList.remove('show');
+        // document.getElementById('bankSpan').classList.remove('show');
+
+        // document.getElementById('paytm1').addEventListener('click',function(){
+        // document.getElementById('paytm1').classList.add('button-active');
+        // document.getElementById('upi1').classList.remove('button-active');
+        // document.getElementById('bank1').classList.remove('button-active');
+        // document.getElementById('upiSpan').classList.add('hide');
+        // document.getElementById('bankSpan').classList.add('hide');
+        // document.getElementById('paytmSpan').classList.remove('hide');
+        // document.getElementById('paytmSpan').classList.add('show');
+        // document.getElementById('upiSpan').classList.remove('show');
+        // document.getElementById('bankSpan').classList.remove('show');
+        // console.log('Paytm Pressed');
+        // });
         
-        document.getElementById('upi1').addEventListener('click',function(){
-        document.getElementById('upi1').classList.add('button-active');
-        document.getElementById('paytm1').classList.remove('button-active');
-        document.getElementById('bank1').classList.remove('button-active');
-        document.getElementById('img3').src = 'https://picsum.photos/id/36/300/500';
-        document.getElementById('paytmSpan').classList.add('hide');
-        document.getElementById('bankSpan').classList.add('hide');
-        document.getElementById('upiSpan').classList.remove('hide');
-        document.getElementById('upiSpan').classList.add('show');
-        document.getElementById('paytmSpan').classList.remove('show');
-        document.getElementById('bankSpan').classList.remove('show');
-        console.log('UPI Pressed');
-        });
+        // document.getElementById('upi1').addEventListener('click',function(){
+        // document.getElementById('upi1').classList.add('button-active');
+        // document.getElementById('paytm1').classList.remove('button-active');
+        // document.getElementById('bank1').classList.remove('button-active');
+        // document.getElementById('img3').src = 'https://picsum.photos/id/36/300/500';
+        // document.getElementById('paytmSpan').classList.add('hide');
+        // document.getElementById('bankSpan').classList.add('hide');
+        // document.getElementById('upiSpan').classList.remove('hide');
+        // document.getElementById('upiSpan').classList.add('show');
+        // document.getElementById('paytmSpan').classList.remove('show');
+        // document.getElementById('bankSpan').classList.remove('show');
+        // console.log('UPI Pressed');
+        // });
         
-        document.getElementById('bank1').addEventListener('click',function(){
-        document.getElementById('bank1').classList.add('button-active');
-        document.getElementById('upi1').classList.remove('button-active');
-        document.getElementById('paytm1').classList.remove('button-active');
-        document.getElementById('paytmSpan').classList.add('hide');
-        document.getElementById('upiSpan').classList.add('hide');
-        document.getElementById('bankSpan').classList.remove('hide');
-        document.getElementById('bankSpan').classList.add('show');
-        document.getElementById('paytmSpan').classList.remove('show');
-        document.getElementById('upiSpan').classList.remove('show');
-        console.log('Bank Pressed');
-        });
+        // document.getElementById('bank1').addEventListener('click',function(){
+        // document.getElementById('bank1').classList.add('button-active');
+        // document.getElementById('upi1').classList.remove('button-active');
+        // document.getElementById('paytm1').classList.remove('button-active');
+        // document.getElementById('paytmSpan').classList.add('hide');
+        // document.getElementById('upiSpan').classList.add('hide');
+        // document.getElementById('bankSpan').classList.remove('hide');
+        // document.getElementById('bankSpan').classList.add('show');
+        // document.getElementById('paytmSpan').classList.remove('show');
+        // document.getElementById('upiSpan').classList.remove('show');
+        // console.log('Bank Pressed');
+        // });
         </script>
         </div>
 
